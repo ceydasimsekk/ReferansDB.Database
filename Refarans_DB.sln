@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36811.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Refarans_DB", "Refarans_DB\Refarans_DB.sqlproj", "{EA79A067-0A40-4AD8-A8D7-106CC994630C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA79A067-0A40-4AD8-A8D7-106CC994630C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA79A067-0A40-4AD8-A8D7-106CC994630C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA79A067-0A40-4AD8-A8D7-106CC994630C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EA79A067-0A40-4AD8-A8D7-106CC994630C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA79A067-0A40-4AD8-A8D7-106CC994630C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA79A067-0A40-4AD8-A8D7-106CC994630C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E217735-3097-4757-BEAE-6CF39D494CE8}
+	EndGlobalSection
+EndGlobal

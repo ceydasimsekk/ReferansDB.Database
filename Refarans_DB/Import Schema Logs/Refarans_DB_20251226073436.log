@@ -1,0 +1,88 @@
+26.12.2025 10:34:36	This log contains information about the import schema operation into project 'Refarans_DB' on computer 'LAPTOP-495OMVJP' by user 'ceyda'.
+26.12.2025 10:34:36	Import of database schema has started.
+26.12.2025 10:34:46	Gathering database credentials
+26.12.2025 10:34:46	Gathering database options
+26.12.2025 10:34:46	Gathering generic database scoped configuration option
+26.12.2025 10:34:46	Gathering users
+26.12.2025 10:34:46	Gathering roles
+26.12.2025 10:34:46	Gathering application roles
+26.12.2025 10:34:46	Gathering role memberships
+26.12.2025 10:34:46	Gathering filegroups
+26.12.2025 10:34:46	Gathering full-text catalogs
+26.12.2025 10:34:46	Gathering assemblies
+26.12.2025 10:34:46	Gathering certificates
+26.12.2025 10:34:46	Gathering asymmetric keys
+26.12.2025 10:34:46	Gathering symmetric keys
+26.12.2025 10:34:46	Gathering encrypted symmetric keys
+26.12.2025 10:34:46	Gathering schemas
+26.12.2025 10:34:46	Gathering XML schema collections
+26.12.2025 10:34:46	Gathering user-defined data types
+26.12.2025 10:34:46	Gathering user-defined types
+26.12.2025 10:34:46	Gathering table types
+26.12.2025 10:34:46	Gathering unique keys for table types
+26.12.2025 10:34:46	Gathering primary keys for table types
+26.12.2025 10:34:47	Gathering indexes for table types
+26.12.2025 10:34:47	Gathering check constraints for table types
+26.12.2025 10:34:47	Gathering default constraints for table types
+26.12.2025 10:34:47	Gathering partition functions
+26.12.2025 10:34:47	Gathering partition schemes
+26.12.2025 10:34:47	Gathering functions
+26.12.2025 10:34:47	Gathering encrypted functions
+26.12.2025 10:34:47	Gathering aggregates
+26.12.2025 10:34:47	Gathering procedures
+26.12.2025 10:34:47	Gathering encrypted procedures
+26.12.2025 10:34:47	Gathering tables
+26.12.2025 10:34:58	Gathering primary keys
+26.12.2025 10:34:58	Gathering unique constraints
+26.12.2025 10:34:58	Gathering foreign keys
+26.12.2025 10:34:58	Gathering default constraints
+26.12.2025 10:34:58	Gathering check constraints
+26.12.2025 10:34:58	Gathering views
+26.12.2025 10:34:58	Gathering encrypted views
+26.12.2025 10:34:58	Gathering indexes
+26.12.2025 10:34:58	Gathering statistics
+26.12.2025 10:34:58	Gathering full-text index stoplists
+26.12.2025 10:34:58	Gathering search property lists
+26.12.2025 10:34:58	Gathering search properties
+26.12.2025 10:34:58	Gathering full-text indexes
+26.12.2025 10:34:58	Gathering column store indexes
+26.12.2025 10:34:58	Gathering spatial indexes
+26.12.2025 10:34:58	Gathering XML indexes
+26.12.2025 10:34:58	Gathering Selective XML indexes
+26.12.2025 10:34:59	Gathering encrypted triggers
+26.12.2025 10:34:59	Gathering triggers
+26.12.2025 10:34:59	Gathering encrypted and clr ddl triggers
+26.12.2025 10:34:59	Gathering ddl triggers
+26.12.2025 10:34:59	Creating edge constraints
+26.12.2025 10:34:59	Gathering synonyms
+26.12.2025 10:34:59	Gathering defaults
+26.12.2025 10:34:59	Gathering data constraint uddt bindings
+26.12.2025 10:34:59	Gathering rules
+26.12.2025 10:34:59	Gathering data constraint uddt bindings
+26.12.2025 10:34:59	Gathering message types
+26.12.2025 10:34:59	Gathering queues
+26.12.2025 10:34:59	Gathering contracts
+26.12.2025 10:34:59	Gathering services
+26.12.2025 10:34:59	Gathering event notifications
+26.12.2025 10:34:59	Gathering remote service bindings
+26.12.2025 10:34:59	Gathering broker priorities
+26.12.2025 10:34:59	Gathering signatures
+26.12.2025 10:34:59	Gathering compression options
+26.12.2025 10:34:59	Gathering sequence types
+26.12.2025 10:34:59	Gathering security policies
+26.12.2025 10:34:59	Gather column encryption keys
+26.12.2025 10:34:59	Gathering column master keys
+26.12.2025 10:34:59	Gathering external data sources
+26.12.2025 10:34:59	Gathering external file formats
+26.12.2025 10:34:59	Gathering external tables
+26.12.2025 10:34:59	Gathering XML index compression options
+26.12.2025 10:34:59	Gathering extended properties
+26.12.2025 10:34:59	Gathering assemblies
+26.12.2025 10:34:59	Gathering credentials
+26.12.2025 10:34:59	Gathering logins
+26.12.2025 10:34:59	Gathering server audits
+26.12.2025 10:35:01	Scanning project for duplicate elements
+26.12.2025 10:35:01	Finished duplicate element processing
+26.12.2025 10:35:02	Finished importing database.
+26.12.2025 10:35:02	A summary of the import was saved to the following location: C:\Users\ceyda\source\repos\Refarans_DB\Refarans_DB\Import Schema Logs\Refarans_DB_20251226073436.log
+26.12.2025 10:35:02	Click Finish to continue...
