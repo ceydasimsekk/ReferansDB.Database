@@ -57,3 +57,4 @@ jobs:
             /p:BlockOnPossibleDataLoss=true `
             /p:VerifyDeployment=true `
             /p:CreateNewDatabase=false
+             }
