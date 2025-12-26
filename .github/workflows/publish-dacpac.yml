@@ -23,7 +23,8 @@ jobs:
       uses: microsoft/setup-msbuild@v1
 
     - name: Build SSDT project (Release)
-      run: msbuild **\*.sln /p:Configuration=Release
+      run: msbuild Refarans_DB.sln /p:Configuration=Release
+
 
     - name: Install sqlpackage
       shell: pwsh
