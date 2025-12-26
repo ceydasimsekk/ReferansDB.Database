@@ -1,0 +1,58 @@
+name: Build and publish DACPAC
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:  # Manuel tetikleme için
+
+jobs:
+  build-and-deploy:
+    runs-on: windows-latest
+
+    env:
+      SERVER_NAME: ${{ secrets.SQL_SERVER }}
+      AUTH_USER: ${{ secrets.SQL_USER }}
+      AUTH_PASSWORD: ${{ secrets.SQL_PASSWORD }}
+      TARGET_DATABASES: ${{ secrets.TARGET_DATABASES }}
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1
+
+    - name: Build SSDT project (Release)
+      run: msbuild **\*.sln /p:Configuration=Release
+
+    - name: Install sqlpackage
+      shell: pwsh
+      run: |
+        choco install sqlpackage --yes
+        $exists = Get-Command sqlpackage -ErrorAction SilentlyContinue
+        if (-not $exists) { throw "sqlpackage not found after install." }
+
+    - name: Find generated DACPAC
+      id: find_dacpac
+      shell: pwsh
+      run: |
+        $dacpac = Get-ChildItem -Path . -Filter *.dacpac -Recurse | Select-Object -First 1
+        if (-not $dacpac) { throw "No DACPAC found. Ensure the SSDT project builds a .dacpac." }
+        echo "dacpac_path=$($dacpac.FullName)" >> $env:GITHUB_OUTPUT
+
+    - name: Publish DACPAC to target databases
+      shell: pwsh
+      run: |
+        $dacpac = "${{ steps.find_dacpac.outputs.dacpac_path }}"
+        $dbList = $env:TARGET_DATABASES.Split(",")
+        foreach ($db in $dbList) {
+          Write-Host "Publishing to $db ..."
+          & sqlpackage /Action:Publish `
+            /SourceFile:$dacpac `
+            /TargetServerName:$env:SERVER_NAME `
+            /TargetDatabaseName:$db `
+            /TargetUser:$env:AUTH_USER `
+            /TargetPassword:$env:AUTH_PASSWORD `
+            /p:BlockOnPossibleDataLoss=true `
+            /p:VerifyDeployment=true `
+            /p:CreateNewDatabase=false
